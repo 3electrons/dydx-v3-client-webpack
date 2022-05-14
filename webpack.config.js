@@ -6,6 +6,7 @@ module.exports = {
   resolve: {
     // ... rest of the resolve config
     fallback: {
+      fs: false,
       path: require.resolve('path-browserify'),
       https: require.resolve('https-browserify'),
       os: require.resolve('os-browserify/browser'),
