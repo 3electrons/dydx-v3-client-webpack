@@ -2,24 +2,26 @@
   "name": "dxdy-v3-bundle",
   "version": "0.0.1",
   "scripts": {
-    "start": "webpack"
+    "start": "webpack && js-beautify dist/main.js -o dist/dydx-v3-client.js"
   },
   "mode": "production",
   "dependencies": {
-    "@dydxprotocol/v3-client": "^1.8.5"
+    "@dydxprotocol/v3-client": "^0.0.14"
   },
   "devDependencies": {
     "assert": "^2.0.0",
+    "browserify-zlib": "^0.2.0",
+    "buffer": "^6.0.3",
     "crypto-browserify": "^3.12.0",
     "http-browserify": "^1.7.0",
     "https-browserify": "^1.0.0",
+    "js-beautify": "^1.14.3",
+    "lodash": "^4.17.21",
     "os-browserify": "^0.3.0",
-    "path-browserify": "^1.0.1",
     "stream-browserify": "^3.0.0",
     "stream-http": "^3.2.0",
     "url": "^0.11.0",
     "util": "^0.12.4",
-    "lodash": "^4.17.21",
     "webpack": "^5.72.1",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.9.0"
