@@ -12,6 +12,7 @@ const WS_HOST = 'wss://api.dydx.exchange/v3/ws'
 // NOTE: Set up web3 however your prefer to authenticate to your Ethereum account.
 
 
+ETHEREUM_ADDRESS = '0x22d491Bde2303f2f43325b2108D26f1eAbA1e32b'
 
 web3 = new Web3()
 web3.eth.accounts.wallet.add(ETHEREUM_PRIVATE_KEY)
@@ -22,7 +23,7 @@ debugger
 ;((async () => {
 
   client = new DydxClient(HTTP_HOST, { web3 })
-  const apiCreds = await client.onboarding.recoverDefaultApiCredentials(address)
+  const apiCreds = await client.onboarding.recoverDefaultApiCredentials(ETHEREUM_ADDRESS)
   client.apiKeyCredentials = apiCreds
 
   const timestamp = new Date().toISOString()
