@@ -23,13 +23,14 @@ module.exports = {
   resolve: {
     // ... rest of the resolve config
     fallback: {
-      //fs: false,      
+      fs: false,      
       buffer: require.resolve('buffer/'),
       https: require.resolve('https-browserify'),
       os: require.resolve('os-browserify/browser'),
       http: require.resolve('stream-http'),
       crypto: require.resolve('crypto-browserify'),
       stream: require.resolve('stream-browserify'),
+      path : require.resolve("path-browserify"), 
 
     },    
   },
