@@ -4,10 +4,18 @@
 
 
 const webpack = require("webpack")
+const path = require('path');
+
 
 module.exports = {
   target: 'web',
   mode: 'production',
+
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'main.js',
+    libraryTarget: 'umd',
+  },
 
   plugins: [
     // fix "process is not defined" error:
