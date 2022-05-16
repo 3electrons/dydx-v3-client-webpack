@@ -1,6 +1,10 @@
 # dydx-v3-client-webpack
 ### Attempt to build webpack dxdy-v3-client bundle 
-Does compile - but not verfied yet if does work. 
+Does compile - but not verfied yet if does work.
+
+### Changelog 
+
+16.05.2022 - Added simple web/index.html - to test bundle 
 
 ## Builiding and usage
 ``` bash
