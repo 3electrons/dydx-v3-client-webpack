@@ -20,5 +20,5 @@ npx webpack
 
 Output files will be found at [dist](https://github.com/3electrons/dydx-v3-client-webpack/tree/master/dist) directory.
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/node-qsx7rq)
+You may execute and play with project here -> [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/node-qsx7rq)
 
